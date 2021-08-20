@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
-    <link rel="stylesheet" href="style.css" type="text/css"> 
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" type="text/css"> 
     
 </head>
 
@@ -80,24 +83,28 @@
             </ul>
         </div>
     </section>
-    <section class="carousel slide">
+    
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="container">
-        <div class="carousel-inner ">
+        <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/Layer 42.png" class="d-block w-100" alt="women">
+            </div>
+            <div class="carousel-item carousel-item-one">
+            </div>
+            <div class="carousel-item carousel-item-two">
             </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-        <div class="button-collection ">
-            <button class="carousel-control" type="button" >
-                <span class="visually-hidden"> < </span>
-            </button>
-            <button class="carousel-control" type="button" >
-                <span class="visually-hidden visually-hidden-next">> </span>
-            </button>
-        </div>
-    
-    
+</div>
+   
     </section>
     <section class=" container">
         <div class="collection">
@@ -109,20 +116,41 @@
                 <p class="collection-price">$561</p>
                 <hr class="hr-collect">
                 <div class="navi-collection">
+                    <div class="trend-size">
                     <a href="#" class="trending">
                         <span class="trend-span">CHOOSE COLOR</span>
                         <span class="trend-span1"></span>
                     </a>
+                    <fieldset class="navi-field">
+                        <label class="navi-input" for="XS"><input id="XS" type="checkbox"> white </label>
+                        <label class="navi-input" for="S"><input id="S" type="checkbox"> blue   </label>
+                        <label class="navi-input" for="M"><input id="M" type="checkbox"> black   </label>
+                        <label class="navi-input" for="L"><input id="L" type="checkbox"> green    </label>
+                    </fieldset>
+                    </div>
                     <div class="trend-size">
                         <a href="#" class="trending ">
                             <span class="trend-span ">CHOOSE SIZE</span>
                             <span class="trend-span1"></span>
                         </a>
+                        <fieldset class="navi-field">
+                            <label class="navi-input" for="XS"><input id="XS" type="checkbox"> XS</label>
+                            <label class="navi-input" for="S"><input id="S" type="checkbox"> S</label>
+                            <label class="navi-input" for="M"><input id="M" type="checkbox"> M</label>
+                            <label class="navi-input" for="L"><input id="L" type="checkbox"> L</label>
                     </div>
+                    <div class="trend-size">
                     <a href="#" class="trending">
                         <span class="trend-span">QUANTITY</span>
                         <span class="trend-span1"></span>
                     </a>
+                    <fieldset class="navi-field">
+                        <label class="navi-input" for="XS"><input id="XS" type="checkbox"> Lorem ipsum </label>
+                        <label class="navi-input" for="S"><input id="S" type="checkbox"> Trending</label>
+                        <label class="navi-input" for="M"><input id="M" type="checkbox"> Lorem ipsum</label>
+                        <label class="navi-input" for="L"><input id="L" type="checkbox"> Trending</label>
+                    </fieldset>
+                </div>
                 </div>
                 <a class="example-add-collec" href="Cart.html"> <img class="add-image-collect" src="img/Vector-add.svg" alt="">
                 <p class="add-p-collect"> Add to Cart</p>
@@ -132,6 +160,7 @@
     </section>
 
     <section class="feature-models-product container">
+        <div class="feature-items">
         <a href="Product.html" class="feature-items-pr">
                 <img src="img/example 4.png" alt="" width="360px" class="example-img">
                 <div class="feature-disc">
@@ -142,7 +171,12 @@
                         Operandi.</p>
                     <p class="feature-price">$52.00</p>
                 </div>
+            
         </a>
+        <a class="example-add" href="Cart.html"> <img class="add-image" src="img/Vector-add.svg" alt=""><p class="add-p"> Add to Cart</p>
+        </a>
+        </div>
+        <div class="feature-items">
         <a href="Product.html" class="feature-items-pr">
                 <img src="img/example 3.png" alt="" width="360px" class="example-img">
                 <div class="feature-disc">
@@ -154,6 +188,11 @@
                     <p class="feature-price">$52.00</p>
                 </div>
             </a>
+            <a class="example-add" href="Cart.html"> <img class="add-image" src="img/Vector-add.svg" alt="">
+                <p class="add-p"> Add to Cart</p>
+            </a>
+        </div>
+        <div class="feature-items">
         <a href="Product.html" class="feature-items-pr">
 
                 <img src="img/example 6.png" alt="" width="360px" class="example-img">
@@ -166,6 +205,10 @@
                     <p class="feature-price">$52.00</p>
                 </div>
         </a>
+        <a class="example-add" href="Cart.html"> <img class="add-image" src="img/Vector-add.svg" alt="">
+        <p class="add-p"> Add to Cart</p>
+        </a>
+    </div>
     </section>
 
     <footer>
@@ -194,20 +237,30 @@
                     <p class="text-potect">© 2021 Brand All Rights Reserved.</p>
                 </div>
                 <div class="social">
-                    <ul class="social-ul">
-                        <li class="social-li"><a class="social-a" href="#"><img class="sosial-img" src="img/FB.svg"
-                                        alt="Facebook"></a></li>
-                        <li class="social-li"><a class="social-a instagram" href="#"><img class="sosial-img"
-                                        src="img/Instagram.svg" alt="Instagram" class="social-img"></a></li>
-                        <li class="social-li"><a class="social-a" href="#"><img class="sosial-img" src="img/Pinterest.svg"
-                                        alt="Pinterest"></a></li>
-                        <li class="social-li"><a class="social-a" href="#"><img class="sosial-img" src="img/Twitter.svg"
-                                        alt="Twitter"></a></li>
-                     </ul>
+                    <div class="social-ul">
+                        <a class="social-a" href="#"><img class="sosial-img" src="img/FB.svg"
+                        alt="Facebook"></a>
+                        <a class="social-a instagram" href="#"><img class="sosial-img"
+                        src="img/Instagram.svg" alt="Instagram" class="social-img"></a>
+                        <a class="social-a" href="#"><img class="sosial-img" src="img/Pinterest.svg"
+                        alt="Pinterest"></a>
+                        <a class="social-a" href="#"><img class="sosial-img" src="img/Twitter.svg"
+                        alt="Twitter"></a>
+                    </div>
                 </div>
             </div>
         </section>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
+
             
 </html>
