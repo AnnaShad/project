@@ -24,6 +24,11 @@ body {
 max-width: 1140px;
 margin: 0 auto;
 
+
+}
+
+.content-p{
+    padding: 3% 2% 0 ;
 }
 
 .menu-header {
@@ -115,22 +120,27 @@ margin: 0 auto;
 
 .catalog-p  {
     position: relative;
-    
-    }
+}
 .catalog-a {
     text-decoration: none;
     display: block;
+    
 }
 
 .catalog-a:hover {
     transform: scale(103%);
 }
 
+.catalog-img{
+    
+}
 
 .catalog-text {
      position: absolute;
-     left: 105px;
-     top: 105px;
+    left: 105px;
+    top: 105px;
+    
+     
     }
 
 .c-text {
@@ -177,12 +187,14 @@ margin: 0 auto;
     
 }
 
-.feature-models-1, .feature-models-2  {
-    display: flex;
-    justify-content: space-between;  
-    
-    
+.feature-models {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    grid-gap: 30px;
 }
+
+
 .feature-items:hover .example-img {
     filter: brightness(30%);
 }
@@ -287,6 +299,7 @@ margin: 0 auto;
 }
 
 .buttom-feature {
+    margin-top: 49px;
     margin-bottom: 95px;
     display: flex;
     justify-content: center;
@@ -1600,6 +1613,116 @@ input[placeholder="Bangladesh"]{
 .regist-items-two-li:before{
     content: url("./img/Vectorreg.svg");
     padding-right: 23px;
+}
+
+ .catalog-img{
+       max-width: 100%;
+       
+   }
+
+@media screen and (max-width: 768px) {
+   .title-promo{
+       margin-left: 480px;
+   }
+   .title-first{
+       @include text-size(44px, 53px);
+   }
+   .promo-text{
+       @include  text-size(24px, 28px);
+   }
+
+  
+
+   .catalog-p{
+       margin-right: 3%;
+       margin-bottom: 3%;
+   }
+   
+   .feature-models {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    }
+    
+    .cont-plus{
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .plus{
+        margin-bottom: 45px;
+    }
+
+    .subscribes{
+        flex-direction: column;
+    }
+
+    .sub-forms{
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .forms-text{
+        padding-right: 20px;
+    }
+    .catalog-text{
+        top: 45px;
+        left: 40px;
+
+    }
+
+    .ac-text{
+        top: 30px;
+        left: 250px;
+    }
+
+    .feature-h, .feature-text{
+        width: 100%;
+    }
+  
+}
+
+@media screen and (max-width: 376px){
+    .promo-cont{
+        background-image: none;
+    }
+
+    .title-promo{
+       margin:  auto;
+       
+   }
+   
+   .catalog-people{
+       flex-wrap: wrap;
+   }
+
+ 
+    .catalog-p-m{
+        max-width: 330px;
+       
+        
+    }
+
+    .catalog-p{
+       
+       margin-bottom: 3%;
+   }
+
+    .ac-text{
+        top: 10px;
+        left: 92px;
+    }
+
+    .feature-models {
+    grid-template-columns: 1fr;
+    grid-auto-rows: repeat(6, 1fr);
+    }
+
+    .catalog-text{
+         left: 80px;
+        top: 80px;
+
+    }
 }
 
 
